@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { NavbarTop } from "../components/Navbar_Top";
 import { Loading } from "../components/Component_loading";
 import { Not_found } from "../pages/Not_Found";
+import Test_level from "../pages/test-level";
 
 // 🔽 IMPORTACIONES DINÁMICAS
 const Login = lazy(() => import("../pages/login"));
@@ -34,6 +35,7 @@ const AppRouter = () => {
           <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/login" element={<Login />} />
+               <Route path="/test-exam" element={<Test_level />} />
               <Route path="/estudiantes" element={<Table_student />} />
               <Route path="/pagina-no-encontrada" element={<Not_found navigate_to="/estudiantes" />} />
               <Route path="/matricular-estudiante" element={<Add_student />} />

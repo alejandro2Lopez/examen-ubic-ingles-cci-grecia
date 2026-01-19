@@ -5,6 +5,7 @@ import AppRouter from "./AppRouter";
 import PublicRouter from "./PublicRouter";
 import PrivateRouter from "./PrivateRouter";
 import { Loading } from "../components/Component_loading";
+import Test_level from "../pages/test-level";
 // Carga dinámica de Login
 const Login = lazy(() => import("../pages/login"));
 
@@ -18,6 +19,15 @@ const ManagementRouter = () => {
             element={
               <PublicRouter>
                 <Login />
+              
+              </PublicRouter>
+            }
+          />
+           <Route
+            path="/test-exam"
+            element={
+              <PublicRouter>
+                <Test_level/>
               </PublicRouter>
             }
           />

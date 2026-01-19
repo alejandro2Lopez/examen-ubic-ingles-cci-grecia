@@ -137,7 +137,7 @@ const Teacher: React.FC<any> = ({ readOnly, isEdit, mode }) => {
         } else {
 
             const resultado = await putFetch(sb, "teacher", data);
-            console.log(resultado);
+          
 
             setIsSubmitting(false);
 

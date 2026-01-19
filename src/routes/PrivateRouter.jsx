@@ -29,7 +29,7 @@ const PrivateRouter = ({ children }) => {
 
   if (loading || autorizado === null) return <Loading />;
 
-  return autorizado ? children : <Navigate to="/login" />;
+  return autorizado ? children : <Navigate to="/test-exam" />;
 };
 
 export default PrivateRouter;

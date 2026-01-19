@@ -108,14 +108,14 @@ const Enrollment: React.FC<any> = ({ readOnly }) => {
 
         const data = courseForm.getValues();
         setIsSubmitting(true); // Activar loading
-        console.log(data);
+      
 
         const fullData = {
             enrollment: data,
         };
 
         const resultado = await putFetch(sb, "enrollment", fullData);
-        console.log(resultado);
+      
 
         setIsSubmitting(false);
 
