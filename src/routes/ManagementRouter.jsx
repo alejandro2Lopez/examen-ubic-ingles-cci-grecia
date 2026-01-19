@@ -24,7 +24,7 @@ const ManagementRouter = () => {
             }
           />
            <Route
-            path="/test-exam"
+            path="/examen-ubicacion"
             element={
               <PublicRouter>
                 <Test_level/>
